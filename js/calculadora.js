@@ -49,7 +49,7 @@ console.log("División con cero:"+ dividir(numero1, 0));
 
 
 
-// Calculadora - Nivel II
+// Calculadora - Nivel III
 
 //Punto 1
 function numeroCuadrado(a) {
@@ -81,7 +81,6 @@ console.log("Número Porcentaje 1: "+ calcularPorcentaje(numPorcentaje1, numPorc
 
 
 
-
 //Punto 4
 function generadorDePorcentaje(parte, total) {
     return (numPorcentaje2 * 100) / numPorcentaje1;
@@ -89,3 +88,19 @@ function generadorDePorcentaje(parte, total) {
 
 console.log("Número Generador de porcentaje: "+ generadorDePorcentaje(numPorcentaje2, numPorcentaje1));
 
+
+
+
+// Calculadora - Nivel VI
+
+let numeroPar = parseFloat(prompt("Ingrese un número para saber si es par: "));
+
+function verificarNumeroPar(numeroPar) {
+    if (numeroPar % 2 === 0) {
+        return "El número " + numeroPar + " es par.";
+    } else {
+        return "El número " + numeroPar + " es impar.";
+    }
+}
+
+console.log(verificarNumeroPar(numeroPar));
